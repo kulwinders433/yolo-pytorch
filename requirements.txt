@@ -1,0 +1,11 @@
+# Python dependencies for YOLO and ONNX inference
+# Note: PyTorch is included in the base Docker image
+# Install these if using outside Docker or for reference
+
+ultralytics>=8.0.0
+onnx>=1.14.0
+onnxsim>=0.4.0
+onnxruntime-gpu>=1.16.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0

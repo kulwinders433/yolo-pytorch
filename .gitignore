@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Models (large files)
+models/pytorch/*.pt
+models/onnx/*.onnx
+!models/pytorch/.gitkeep
+!models/onnx/.gitkeep
+
+# Outputs
+outputs/**/*
+!outputs/predictions/.gitkeep
+!outputs/exports/.gitkeep
+!outputs/logs/.gitkeep
+!outputs/predictions/pytorch/.gitkeep
+!outputs/predictions/onnx/.gitkeep
+
+# Data (if large)
+data/images/**/*
+data/videos/**/*
+!data/images/.gitkeep
+!data/videos/.gitkeep
+!data/images/input/.gitkeep
+!data/images/test/.gitkeep
+!data/videos/input/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+
+# Logs
+*.log

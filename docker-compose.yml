@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  yolo:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: yolo-onnx:latest
+    container_name: yolo-onnx
+    volumes:
+      - .:/workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    stdin_open: true
+    tty: true
+    command: tail -f /dev/null  # Keep container running
+
