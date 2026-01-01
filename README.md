@@ -110,6 +110,20 @@ Note: You'll need to install CUDA and cuDNN separately for GPU support.
 - **configs/**: YAML configuration files
 - **notebooks/**: Jupyter notebooks for experimentation
 
+## Screenshots
+
+### Test Image
+![Test Image](screenshots/image.png)
+*Original test image used for inference demonstration*
+
+### PyTorch Model Results
+![PyTorch Results](screenshots/result-pytorch.png)
+*Inference results using the PyTorch YOLO model with bounding boxes and class labels*
+
+### ONNX Model Results
+![ONNX Results](screenshots/result-onnx.png)
+*Inference results using the converted ONNX model, demonstrating successful model conversion and deployment*
+
 ## Dependencies
 
 See `requirements.txt` for Python dependencies. The Dockerfile includes all system dependencies.
